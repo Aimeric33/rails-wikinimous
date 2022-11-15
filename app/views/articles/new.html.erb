@@ -1,0 +1,9 @@
+<h1>Ajouter un article</h1>
+
+<%= form_with model: @article do |f| %>
+  <%= f.label :title, class: "form-label" %>
+  <%= f.text_field :title, class: "form-control" %>
+  <%= f.label :content, class: "form-label mt-3" %>
+  <%= f.text_area :content, class: "form-control" %>
+  <%= f.submit "Ajouter", class: "btn btn-primary mt-3" %>
+<% end %>

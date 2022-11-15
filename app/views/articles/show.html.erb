@@ -1,0 +1,6 @@
+<h1><%= @article.title %></h1>
+<%= link_to 'Modifier <i class="fa-solid fa-pen-to-square"></i>'.html_safe,  edit_article_path %>
+<%= link_to 'Supprimer <i class="fa-regular fa-trash-can"></i>'.html_safe, article_path(@article.id), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+
+
+<p><%= @article.content %></p>
